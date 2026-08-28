@@ -1,0 +1,14 @@
+services:
+  homeui:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:80"
+      - "1883:1883"
+    volumes:
+      - homeui-data:/var/lib/wb-homeui
+    restart: unless-stopped
+
+volumes:
+  homeui-data:

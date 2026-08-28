@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ "$1" = "reload" ] && [ "$2" = "nginx" ]; then
+  exec /usr/sbin/nginx -s reload
+fi
+exit 0
