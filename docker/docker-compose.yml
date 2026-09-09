@@ -6,6 +6,7 @@ services:
     ports:
       - "8080:80"
       - "1883:1883"
+      - "18883:18883"
     volumes:
       - homeui-data:/var/lib/wb-homeui
     restart: unless-stopped
