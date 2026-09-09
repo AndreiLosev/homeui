@@ -9,6 +9,7 @@ services:
       - "18883:18883"
     volumes:
       - homeui-data:/var/lib/wb-homeui
+      - homeui-data:/var/lib/wirenboard/db
     restart: unless-stopped
 
 volumes:

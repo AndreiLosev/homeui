@@ -4,6 +4,7 @@ set -euo pipefail
 mkdir -p \
   /run/mosquitto \
   /tmp \
+  /var/lib/wirenboard/db \
   /var/lib/wb-homeui/fonts \
   /var/lib/wb-homeui/nginx \
   /var/lib/wb-homeui/nginx-gates \
